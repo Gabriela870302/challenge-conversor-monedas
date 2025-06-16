@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 public class ClienteExchangeRate {
     public static final String url = "https://v6.exchangerate-api.com/v6/57ff1807b853cef3166f3ef5/latest/USD";
 
-    public String consultarApiExchangeRate(){
+    public String consultarApiExchangeRate() {
 
         try {
             //Construyendo cliente para consumir

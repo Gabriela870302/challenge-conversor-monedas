@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class App {
 
-    public static void mostrarMenu(){
+    public static void mostrarMenu() {
         System.out.println("""
                 ****************************************
                 Binvenido al conversor de monedas
@@ -29,12 +29,12 @@ public class App {
         int opcion = scanner.nextInt();
 
         //Asegurando una opcion valida
-        while(opcion > 7 || opcion < 1){
+        while (opcion > 7 || opcion < 1) {
             System.out.println("Opcion invalida elija una numero del menú:");
             opcion = scanner.nextInt();
         }
 
-        if(opcion != 7){
+        if (opcion != 7) {
             System.out.println("Ingrese el monto:");
             double monto = scanner.nextDouble();
 

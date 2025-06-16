@@ -7,15 +7,15 @@ import com.google.gson.JsonParser;
 
 public class Conversor {
 
-    public double convertirMonto(int opcion, double monto){
+    public double convertirMonto(int opcion, double monto) {
         String moneda = obtenerTipoMoneda(opcion);
         double tasa = obtenerTasa(moneda);
 
         return monto * tasa;
     }
 
-    private String obtenerTipoMoneda(int opcion){
-        switch (opcion){
+    private String obtenerTipoMoneda(int opcion) {
+        switch (opcion) {
             case 1:
                 return "ARS";
             case 2:
@@ -33,13 +33,13 @@ public class Conversor {
         }
     }
 
-    private double obtenerTasa(String moneda){
+    private double obtenerTasa(String moneda) {
         JsonParser parser = new JsonParser();
         Conversor conversor = new Conversor();
         ClienteExchangeRate clienteExchangeRate = new ClienteExchangeRate();
 
         //Analizando respuesta Json
-        String response =  clienteExchangeRate.consultarApiExchangeRate();
+        String response = clienteExchangeRate.consultarApiExchangeRate();
         JsonElement jsonElement = JsonParser.parseString(response);
         JsonObject jsonObject = jsonElement.getAsJsonObject();
 
@@ -48,6 +48,4 @@ public class Conversor {
 
         return tasa;
     }
-
-
 }
