@@ -17,7 +17,7 @@ https://github.com/Gabriela870302/challenge-conversor-monedas.git
 
 
 ## Tecnologías utilizadas
-* java 17
+* Java 17
 * GSon
 
 
