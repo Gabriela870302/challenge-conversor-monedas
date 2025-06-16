@@ -1,4 +1,4 @@
-# Challenge amigo secreto
+# Challenge Conversor de monedas
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
 
 ## Descripción del proyecto
